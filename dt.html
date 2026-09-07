@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INDIAN FESTIVALS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fff3e0, #e8f5e9);
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            background-color:violet;
+            color:lawngreen;
+            padding: 20px;
+            margin: 0;
+        }
+        p{
+            background-color:rgb(21, 81, 81);
+            color:rgb(19, 37, 37);
+            padding:20px;
+            margin:0;
+        }
+        .festival-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 30px;
+        }
+
+        .festival {
+            background-color: white;
+            border: 2px solid #00eeff;
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .festival:hover {
+            background-color:rgb(21, 81, 81);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        #details {
+            display: none;
+            background-color:greenyellow;
+            width: 70%;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        #details h2 {
+            color: #d45d1e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🌿 INDIAN FESTIVALS 🌿</h1>
+
+    <p>CLICK ON ANY FESTIVAL TO LEARN MORE</p>
+
+    <div class="festival-container">
+
+        <div class="festival" onclick="showFestival('Diwali', 'Diwali is the festival of lights. People decorate their homes with lamps and enjoy the celebrations with crackers.')">
+           🎇 Diwali    
+        </div>
+
+        <div class="festival" onclick="showFestival('Holi', 'Holi is the festival of colours. People celebrate by playing with colourful powders and water.')">
+           🫟 Holi
+        </div>
+
+        <div class="festival" onclick="showFestival('Dussehra', 'Dussehra celebrates the victory of good over evil and is celebrated in many parts of India.')">
+           💐 Dussehra
+        </div>
+
+        <div class="festival" onclick="showFestival('Ganesh Chaturthi', 'Ganesh Chaturthi celebrates Lord Ganesha. Beautiful Ganesha idols are worshipped during the festival.')">
+            🐘 Ganesh Chaturthi
+        </div>
+
+        <div class="festival" onclick="showFestival('Sankranti', 'Sankranti is celebrated with full of happiness with traditional food and decorations.')">
+            💐 Sankranti
+        </div>
+
+        <div class="festival" onclick="showFestival('Ramzan', 'Ramzan is celebrated by Muslims with prayers, family gatherings and sharing delicious food.')">
+           🌙 Ramzan
+        </div>
+
+        <div class="festival" onclick="showFestival('Christmas', 'Christmas celebrates the birth of Jesus Christ. People decorate Christmas trees and exchange greetings.')">
+           🎄 Christmas
+        </div>
+
+        <div class="festival" onclick="showFestival('Rakhi', 'Rakhi celebrates the bond between brothers and sisters.')">
+           🪷 Rakhi
+        </div>
+
+        <div class="festival" onclick="showFestival('krishnastami', 'krishnashtami celebrates the birth of Lord Krishna with prayers and cultural programs.')">
+           🌻 krishnastami
+        </div>
+
+        <div class="festival" onclick="showFestival('Ugadi', 'Ugadi is the traditional New Year in Andhra Pradesh and telangana.')">
+           🌿 Ugadi
+        </div>
+        </div>
+        </div>
+    </div>
+        </body>
+
+    <div id="details">
+        <h2 id="festivalName"></h2>
+        <p id="festivalDescription"></p>
+    </div>
+    <script>
+        function showFestival(name, description) {
+            document.getElementById("details").style.display = "block";
+            document.getElementById("festivalName").innerHTML = name;
+            document.getElementById("festivalDescription").innerHTML = description;
+        }
+    </script>
+    </div>
+    </body>
+    </html>
